@@ -1,9 +1,16 @@
+*
+{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:cursive;
+}
 .butterfly-header
 {
 	width:100%;
     background-color: #302f2f8f;
 	position:fixed;
-	z-index:1;
+	z-index:2;
 }
 h2
 {
@@ -12,10 +19,13 @@ h2
 .header-container
 {
 	display:flex;
-	justify-content:space-around;
+	justify-content:space-between;
 	align-items:center;
-	padding:25px 0px;
-	
+	padding:25px 0px;	
+}
+.header-container h1,.icon
+{
+	color:white;
 }
 .header-container
 {
@@ -87,40 +97,15 @@ h2
 	background-color:#f27e7e;
 	color:white;
 }
-.social-icon
-{
-	display:flex;
-	justify-content:space-between;
-	align-items:center;
-}
-.icon
-{
-	height:50px;
-	width:50px;
-	border-radius:50%;
-	border:2px solid  #000000d4;
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	font-size:22px;
-}
-.icon a
-{
-	text-decoration:none;
-	color:black;
-}
-.icon:hover .icon a
-{
-	color:white;
-}
-.icon:hover 
-{
-	background-color:#0078ff;
-}
+
 
 .name-ani1
 {
 	 animation: 1s anim-flipX ease infinite;
+	
+}
+.skill-section h1
+{
 	
 }
 @keyframes anim-flipX {
@@ -137,4 +122,97 @@ h2
     opacity: 1;
     transform: rotateX(720deg);
   }
+}
+/*ABOUT SECTION*/
+.about-contant p 
+{
+	margin-top:50px;
+	color:grey;
+}
+.about-contant h3
+{
+	color:darkblue;
+}
+/*EDUCATION DETAILS*/
+.edu-title p:hover
+{
+	color:#0563bb;
+}
+/*SKILL SECTION*/
+.pro-color
+{
+	background-color:#302f2f8f !important;
+}
+/*PROJECT SECTION*/
+.pro-card
+{
+	border:none !important;
+}
+.view-btn
+{
+	color:white !important;
+	background-color:#302f2f8f !important;
+}
+/*CONTACT SECTION*/
+.contact-section
+{
+	padding:50px 0px;
+	background-color:rgb(250,251,255);
+}
+.social-icon
+{
+	display:flex;
+}
+.icon
+{
+	height:50px;
+	width:50px;
+	background-color:#302f2f8f;
+	border-radius:50%;
+	margin:0px 10px;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+}
+.icon a
+{
+	color:white;
+}
+.icon:hover a
+{
+	color: #49b5e7;
+	transition:1s;
+}
+@media (min-width:320px)
+{
+	.header-container
+	{
+		width:85%;
+		margin:0 auto;
+	}
+	.header-container nav
+	{
+		display:none;
+	}
+}
+@media (min-width:600px)
+{
+	
+}
+@media (min-width:1025px)
+{
+	.header-container
+	{
+		width:85%;
+		margin:0 auto;
+	}
+	.icon
+	{
+		display:none;
+	}
+	.header-container nav
+	{
+		display:contents;
+	}
 }
