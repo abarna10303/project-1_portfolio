@@ -19,7 +19,7 @@ h2
 .header-container
 {
 	display:flex;
-	justify-content:space-between;
+	justify-content:center;
 	align-items:center;
 	padding:25px 0px;	
 }
@@ -76,10 +76,7 @@ h2
 	justify-content:center;
 	align-items:center;
 }
-.home-container
-{
-	
-}
+
 .home-container h1,.home-container h3
 {
 	color:white;
@@ -104,9 +101,8 @@ h2
 	 animation: 1s anim-flipX ease infinite;
 	
 }
-.skill-section h1
-{
-	
+.container h1{
+	animation: 3s heading ease infinite;
 }
 @keyframes anim-flipX {
   0% {
@@ -123,10 +119,20 @@ h2
     transform: rotateX(720deg);
   }
 }
+@keyframes heading{
+	0%{
+		transform: rotateX(0deg);
+	}
+	50%{
+		transform: rotateX(180deg);
+	}
+	0%{
+		transform: rotateX(360deg);
+	}
+}
 /*ABOUT SECTION*/
 .about-contant p 
 {
-	margin-top:50px;
 	color:grey;
 }
 .about-contant h3
@@ -147,11 +153,15 @@ h2
 .pro-card
 {
 	border:none !important;
+	padding: 20px;
 }
 .view-btn
 {
 	color:white !important;
 	background-color:#302f2f8f !important;
+}
+.pro-card i{
+	color: #f27e7e;
 }
 /*CONTACT SECTION*/
 .contact-section
@@ -184,6 +194,7 @@ h2
 	color: #49b5e7;
 	transition:1s;
 }
+
 @media (min-width:320px)
 {
 	.header-container
