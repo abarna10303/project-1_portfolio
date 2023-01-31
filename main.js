@@ -1,5 +1,4 @@
 $('.pro-carousel').owlCarousel({
-    center: true,
 	autoplay:true,
     items:1,
     loop:true,
@@ -8,10 +7,10 @@ $('.pro-carousel').owlCarousel({
 		0:{
             items:1
         },
-        600:{
-            items:3
+        766:{
+            items:2
         },
-		1000:{
+		1200:{
             items:3
         },
     }
