@@ -15,3 +15,15 @@ $('.pro-carousel').owlCarousel({
         },
     }
 });
+var response_nav=document.getElementById('resnav');
+function menuDisplay()
+{
+    response_nav.style.visibility="visible";
+    response_nav.classList.remove('visible1');
+    response_nav.classList.add('visible2')
+}
+function hideDisplay(navigation)
+{
+    response_nav.style.visibility="hidden";
+}
+

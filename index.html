@@ -27,10 +27,22 @@
 					</ul>
 				</nav>
 				<div class="icon d-lg-none d-sm-none d-xs-none">
-					<i class="fa fa-bars" ></i>
+					<i class="fa fa-bars" onclick="menuDisplay()"></i>
 				</div>
 			</div>
 		</header>
+		<section class="">
+			<nav class="navigation1 p-5 visible1" id="resnav">
+				<i class="bi bi-x d-block p-2 rounded-circle" onclick="hideDisplay('xbtn')"></i>
+				<ul class="p-0">
+					<li class="head-other"><a href="#about" class="menu" onclick="hideDisplay('home')">ABOUT</a></li>
+					<li class="head-other"><a href="#skill" class="menu" onclick="hideDisplay('skill')">SKILL</a></li>
+					<li class="head-other"><a href="#education" class="menu" onclick="hideDisplay('education')">EDUCATION</a></li>
+					<li class="head-other"><a href="#project" class="menu" onclick="hideDisplay('project')">PROJECT</a></li>
+					<li class="head-other"><a href="#contact" class="menu"onclick="hideDisplay('contact')">CONTACT</a></li>
+				</ul>
+			</nav>
+		</section>
 		<section class="home-section">
 			<div class="home-container">
 				<div>

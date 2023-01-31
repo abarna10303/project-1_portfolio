@@ -98,6 +98,42 @@ h2
 	animation: 3s heading ease 1;
 	
 }
+/*Navigation*/
+.navigation1{
+	position: fixed;
+	z-index: 2;
+	top: 3rem;
+    right: 2rem;
+	background-color:#45505bd9;
+	width: 0%;
+}
+.visible1
+{
+	visibility: hidden;
+}
+.visible2
+{
+	width: 50%;
+	transition: 2s;
+}
+.navigation1 ul li
+{
+	list-style-type: none;
+	line-height: 3;
+}
+.navigation1 ul li a
+{
+	color: white;
+	text-decoration: none;
+}
+.navigation1 i{
+	color: black;
+	background-color: white;
+	font-size: 30px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
 @keyframes anim-flipX {
   0% {
     opacity: 0;
