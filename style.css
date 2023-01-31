@@ -105,17 +105,9 @@ h2
 	top: 3rem;
     right: 2rem;
 	background-color:#45505bd9;
-	width: 0%;
-}
-.visible1
-{
 	visibility: hidden;
 }
-.visible2
-{
-	width: 50%;
-	transition: 2s;
-}
+
 .navigation1 ul li
 {
 	list-style-type: none;
