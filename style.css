@@ -25,7 +25,8 @@ i,a
 .container-all
 {
 	box-shadow: 0px 0px 15px white,inset 0px 0px 15px white;
-	border-radius: 20% 10px 20% 10px;
+	border-radius: 50px 10px 50px 10px;
+	padding: 1.5rem 0rem;
 }
 .header
 {
@@ -200,7 +201,10 @@ h1,.head-other i
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 20px;
+}
+.icon1 a i
+{
+	font-size: 22px;
 }
 .icon1 a{
 	color: white;
