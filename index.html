@@ -16,51 +16,38 @@
 	<body>
 	<div class="full-container">
 		<header class="header">
-			<div class="header-container w-sm-container-fluid justify-content-sm-center">
-				<nav id="nav" class="d-sm-flex">
+			<div class="header-container container-fluid">
+				<nav id="nav" class="navigation">
 					<ul>
-						<li class="head-other"><a href="#about">ABOUT</a></li>
-						<li class="head-other"><a href="#skill">SKILL</a></li>
-						<li class="head-other"><a href="#education">EDUCATION</a></li>
-						<li class="head-other"><a href="#project">PROJECT</a></li>
-						<li class="head-other"><a href="#contact">CONTACT</a></li>
+						<li class="head-other"><a href="#about"><i class="bi bi-person-fill"></i><span>ABOUT</span></a></li>
+						<li class="head-other"><a href="#skill"><i class="bi bi-file-code-fill"></i><span>SKILL</span></a></li>
+						<li class="head-other"><a href="#education"><i class="bi bi-mortarboard-fill"></i><span>EDUCATION</span></a></li>
+						<li class="head-other"><a href="#project"><i class="bi bi-list-task"></i><span>PROJECT</span></a></li>
+						<li class="head-other"><a href="#contact"><i class="bi bi-person-lines-fill"></i><span>CONTACT</span></a></li>
 					</ul>
 				</nav>
-				<div class="icon d-lg-none d-sm-none d-xs-none">
-					<i class="fa fa-bars" onclick="menuDisplay()"></i>
-				</div>
 			</div>
 		</header>
-		<section class="">
-			<nav class="navigation1 p-5" id="resnav">
-				<i class="bi bi-x d-block p-2 rounded-circle" onclick="hideDisplay('xbtn')"></i>
-				<ul class="p-0">
-					<li class="head-other"><a href="#about" class="menu" onclick="hideDisplay('home')">ABOUT</a></li>
-					<li class="head-other"><a href="#skill" class="menu" onclick="hideDisplay('skill')">SKILL</a></li>
-					<li class="head-other"><a href="#education" class="menu" onclick="hideDisplay('education')">EDUCATION</a></li>
-					<li class="head-other"><a href="#project" class="menu" onclick="hideDisplay('project')">PROJECT</a></li>
-					<li class="head-other"><a href="#contact" class="menu"onclick="hideDisplay('contact')">CONTACT</a></li>
-				</ul>
-			</nav>
-		</section>
 		<section class="home-section">
 			<div class="home-container">
 				<div>
 					<h1 class="display-1">
 						<span class="name-ani1">Abarna</span></h1>
-					<h3>Front-end Developer</h3>
+					<h3 style="color: #ed143d;">Front-end Developer</h3>
 				</div>
 			</div>
 			<div class="image p-5">
 				<a class="btn btn-light download" href="image/resume.doc" target="_blank" download><i class="fa-solid fa-download"></i> DOWNLOAD CV</a>
 			</div>
 		</section>
-		<section class="about-section" id="about">
-			<div class="about-container container">
+		<section class="about-section section" id="about">
+			<div class="about-container container container-all p-5">
 				<h1 class="text-center card-body">About</h1>
 				<div class="about-info row">
-					<div class="ab-img col-sm-12 col-md-5 col-lg-4 mb-4" style="position:relative;">
-						<img src="image/photo3.png" alt="myphoto" class="d-block mx-sm-auto">
+					<div class="col-sm-12 col-md-5 col-lg-4 mb-4" style="position:relative;">
+						<div class="ab-img mx-auto">
+							<img src="image/photo3.png" alt="myphoto" class="d-block mx-sm-auto">
+						</div>
 					</div>
 					<div class="ab-info col-sm-12 col-md-7 col-lg-8 card-body shadow">
 						<div class="text-center p-3 about-contant">
@@ -72,7 +59,7 @@
 			</div>
 		</section>
 		<section class="skill-section section" id="skill">
-			<div class="container">
+			<div class="container container-all p-5">
 				<h1 class="text-center">Skill</h1>
 				<div class="row">
 					<div class="col-sm-12 col-md-6 col-lg-6">
@@ -107,12 +94,14 @@
 			</div>
 		</section>
 		<section class="education-section section" id="education">
-					<div class="education-container container">
+					<div class="education-container container container-all p-5">
 						<h1 class="text-center card-body">Education</h1>
 						<div class="edu-title row">
 							<div class="col-lg-6 col-md-6 col-sm-12">
-								<div class="card pro-card">
-									<img src="image/mspvl.png" alt="" class="d-block mx-sm-auto">
+								<div class="card">
+									<div class="pro-card mx-auto">
+										<img src="image/mspvl.png" alt="" class="d-block mx-sm-auto">
+									</div>
 									<div class="card-body text-center">
 										<h4 style="color: #0563bb">Diploma in Computer Engineering</h4>
 										<p><b>Degree  :  </b>DCE</p>
@@ -123,8 +112,10 @@
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-12">
-								<div class="card pro-card">
-									<img src="image//fabevyicon.jfif" alt="" class="d-block mx-sm-auto">
+								<div class="card">
+									<div class="pro-card mx-auto">
+										<img src="image//fabevyicon.jfif" alt="" class="d-block mx-sm-auto">
+									</div>
 									<div class="card-body text-center">
 										<h4 style="color: #0563bb">Front-end Developer Trainee</h4>
 										<p><b>Course  :  </b>Front-end development</p>
@@ -136,13 +127,13 @@
 						</div>
 					</div>
 		</section>
-		<section class="project-section section" id="project">
-			<div class="project-container container">
+		<section class="project-section section p-5" id="project">
+			<div class="project-container container container-all p-5">
 				<h1 class="text-center card-body">Project</h1>
 				<div class="row">
 					<div class="owl-carousel owl-theme pro-carousel">
 						<div class="item">
-							<div class="card pro-card">
+							<div class="card pro-card2">
 									<img src="image\project1.jpeg" class="card-img-top">
 								<div class="card-body text-center">
 									<h4 class="card-title">Tools</h4>
@@ -152,7 +143,7 @@
 							</div>
 						</div>
 						<div class="item">
-							<div class="card pro-card">
+							<div class="card pro-card2">
 								<img src="image\project.jpeg" class="card-img-top">								
 								<div class="card-body text-center">
 									<h4 class="card-title">Tools</h4>
@@ -162,7 +153,7 @@
 							</div>
 						</div>
 						<div class="item">
-							<div class="card pro-card">
+							<div class="card pro-card2">
 								<img src="image\project2.jpeg" class="card-img-top">
 								<div class="card-body text-center">
 									<h4 class="card-title">Tools</h4>
@@ -172,7 +163,7 @@
 							</div>
 						</div>
 						<div class="item">
-							<div class="card pro-card">
+							<div class="card pro-card2">
 								<img src="image\project4.jpeg" class="card-img-top">								
 								<div class="card-body text-center">
 									<h4 class="card-title">Tools</h4>
@@ -185,8 +176,8 @@
 				</div>
 			</div>
 		</section>
-		<section class="contact-section" id="contact">
-			<div class="contact-container container">
+		<section class="contact-section section p-5" id="contact">
+			<div class="contact-container container container-all p-5">
 				<h1 class="text-center">Contact</h1>
 				<div class="row p-3">
 					<div class="col-md-6 col-lg-4 col-sm-12 mb-3">
