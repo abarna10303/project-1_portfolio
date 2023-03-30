@@ -24,7 +24,7 @@ i,a
 }
 .container-all
 {
-	box-shadow: 0px 0px 15px white,inset 0px 0px 15px white;
+	box-shadow: 0px 0px 15px #41464b9e, inset 0px 0px 15px #ffffff7a;
 	border-radius: 50px 10px 50px 10px;
 	padding: 1.5rem 0rem;
 }
